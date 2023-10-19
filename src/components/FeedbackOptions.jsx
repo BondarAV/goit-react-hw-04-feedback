@@ -1,7 +1,7 @@
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <ul className="option-list">
-      {Object.keys(options).map(option => (
+      {options.map(option => (
         <li className="option-element" key={option}>
           <button
             className="option-button"
